@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>MAX IN PROJECT</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('https://files.catbox.moe/3mfrvq.jpg');
+      background-size: cover;
+      font-family: monospace;
+      color: white;
+      scroll-behavior: smooth;
+    }
+
+    .window {
+      background: #222;
+      border: 2px solid #0f0;
+      padding: 30px;
+      margin: 50px auto;
+      width: 95%;
+      max-width: 800px;
+      box-shadow: 0 0 15px #0ff;
+    }
+
+    .title-bar {
+      background: #000;
+      color: #0f0;
+      padding: 10px;
+      font-weight: bold;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .product {
+      background: rgba(0, 0, 0, 0.8);
+      margin: 20px 0;
+      padding: 20px;
+      border-left: 6px solid #0f0;
+      font-size: 18px;
+    }
+
+    .product h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .rgb-text {
+      font-weight: bold;
+      background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+      background-size: 400% 100%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: animateRGB 5s linear infinite;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    @keyframes animateRGB {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+
+    .rgb-button {
+      display: inline-block;
+      background: #0f0;
+      color: black;
+      padding: 12px 25px;
+      margin-top: 15px;
+      font-size: 18px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      border-radius: 8px;
+      box-shadow: 0 0 8px #0f0, 0 0 20px #0f0;
+      transition: transform 0.2s, box-shadow 0.3s;
+    }
+
+    .rgb-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #0f0, 0 0 30px #0f0;
+    }
+
+    audio {
+      display: none;
+    }
+
+    .request-form {
+      background: rgba(0, 0, 0, 0.4);
+      margin: 30px 0 10px 0;
+      padding: 15px 20px;
+      border-radius: 12px;
+      border: 1px solid #0f0;
+      font-size: 16px;
+      color: #0f0;
+      font-family: monospace;
+      box-shadow: 0 0 8px #0f0a;
+      display: flex;
+      flex-direction: column;
+      min-height: 300px;
+    }
+
+    .request-form h3 {
+      font-size: 22px;
+      margin-bottom: 12px;
+      color: #0f0;
+      font-weight: 600;
+    }
+
+    .request-form label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: #0f0;
+    }
+
+    .request-form input,
+    .request-form textarea {
+      width: 100%;
+      padding: 8px 12px;
+      margin-bottom: 12px;
+      border: 1.5px solid #0f0;
+      border-radius: 8px;
+      background: rgba(0, 0, 0, 0.3);
+      color: #0f0;
+      font-family: monospace;
+      font-size: 15px;
+      outline: none;
+      transition: background 0.3s, border-color 0.3s;
+    }
+
+    .request-form input:focus,
+    .request-form textarea:focus {
+      background: rgba(0, 0, 0, 0.6);
+      border-color: #0fff0f;
+    }
+
+    .request-form button {
+      background: #0f0;
+      color: black;
+      padding: 10px 20px;
+      font-size: 18px;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      font-weight: 700;
+      transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+      margin-top: auto;
+      align-self: flex-start;
+      box-shadow: 0 0 8px #0f0, 0 0 16px #0f0;
+    }
+
+    .request-form button:hover {
+      background: #0c0;
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #0f0, 0 0 25px #0f0;
+    }
+  </style>
+</head>
+<body onload="scrollToBottom()">
+
+  <audio autoplay loop>
+    <source src="https://files.catbox.moe/a63z89.mp3" type="audio/mpeg" />
+    Browser tidak mendukung pemutar audio.
+  </audio>
+
+  <div class="window">
+    <div class="title-bar">🖥️ MAX STORE</div>
+
+    <div class="product">
+      <h3>SCRIPT BUG🥵</h3>
+      <p class="rgb-text">BUY 30+ UPDATE</p>
+      <a class="rgb-button" href="https://wa.me/628812531649?text=Saya%20ingin%20membeli%20SCRIPT%20BUG" target="_blank">Click langsung DM aja</a>
+    </div>
+
+    <div class="product">
+      <h3>PANEL PTRODOTAYL💥</h3>
+      <p class="rgb-text">TANYA AJA LANGSUNG KE DM</p>
+      <a class="rgb-button" href="https://wa.me/628812531649?text=Saya%20ingin%20membeli%20PANEL%20PTRODOTAYL" target="_blank">Click langsung DM aja</a>
+    </div>
+
+    <div class="product">
+      <h3>SCRIPT ENC😋</h3>
+      <p class="rgb-text">TANYA AJA LANGSUNG KE DM</p>
+      <a class="rgb-button" href="https://wa.me/628812531649?text=Saya%20ingin%20membeli%20SC%20ENC" target="_blank">Click langsung DM aja</a>
+    </div>
+
+    <div class="product">
+      <h3>SCRIPT MD⚡</h3>
+      <p class="rgb-text">NO ENC BEBAS RENAME</p>
+      <a class="rgb-button" href="https://wa.me/628812531649?text=Saya%20ingin%20membeli%20SCRIPT%20MD" target="_blank">Click langsung DM aja</a>
+    </div>
+
+    <div class="product">
+      <h3>JASBUG🌟</h3>
+      <p class="rgb-text">jasa bug nomer</p>
+      <a class="rgb-button" href="https://wa.me/628812531649?text=Saya%20ingin%20membeli%20JASA%20BUG" target="_blank">Click langsung DM aja</a>
+    </div>
+
+    <div class="product">
+      <h3>JASA PASANG BOT👻</h3>
+      <p class="rgb-text">JASA PASANG BOT.  NOTES!: YG BELUM BISA YA BRE</p>
+      <a class="rgb-button" href="https://wa.me/628812531649?text=Saya%20ingin%20membeli%20jasa%20pasang" target="_blank">Click langsung DM aja</a>
+    </div>
+
+    <!-- Form Request ke Gmail -->
+    <form class="request-form" action="mailto:welcomemaxprofile@gmail.com" method="POST" enctype="text/plain">
+      <h3>Request Produk Baru</h3>
+      <label for="name">Nama Anda:</label>
+      <input type="text" id="name" name="Nama" required placeholder="Masukkan nama Anda" />
+
+      <label for="email">Email Anda:</label>
+      <input type="email" id="email" name="Email" required placeholder="Masukkan email Anda" />
+
+      <label for="request">Request Produk:</label>
+      <textarea id="request" name="Request" rows="4" required placeholder="Tuliskan produk yang Anda inginkan..."></textarea>
+
+      <button type="submit">Kirim Request via Gmail</button>
+    </form>
+  </div>
+
+  <script>
+    function scrollToBottom() {
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    }
+  </script>
+</body>
+  </html>
+      
